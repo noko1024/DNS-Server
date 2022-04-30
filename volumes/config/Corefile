@@ -1,6 +1,7 @@
 . {
     whoami
     cache 60
+    forward . 1.1.1.1
     errors
     log . "{proto} {remote} is Request: {name} {type} {>id}"
     hosts /etc/coredns/hosts {
