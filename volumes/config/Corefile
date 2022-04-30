@@ -1,0 +1,9 @@
+. {
+    whoami
+    errors
+    log . "{proto} {remote} is Request: {name} {type} {>id}"
+    hosts /etc/coredns/hosts {
+        fallthrough
+    }
+    reload
+}
